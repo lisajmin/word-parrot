@@ -1,0 +1,20 @@
+{
+  "name": "Word Parrot",
+  "version": "1.0",
+  "description": "Double click to hear the word!",
+  "permissions": ["tts"],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+        ],
+      "js": ["js/content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
