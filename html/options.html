@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 110px;
+        height: auto;
+        text-align: center;
+        font-family: "Arial";
+        font-size: 0.85em;
+        margin: 0px;
+        color: #74787a;
+      }
+      div {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      p {
+        margin: 3px;
+      }
+      button {
+        height: 25px;
+        width: 100px;
+        outline: none;
+        margin: 3px auto;
+        border-radius: 4px;
+        border: none;
+        background-color: #ccdef9;
+        font-family: "Arial";
+        font-size: 1.1em;
+      }
+      button:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(2px);
+      }
+      button.active {
+        background-color: #5595fc;
+        color: white;
+      }
+      button.inactive {
+        background-color: #ccdef9;
+      }
+      button:hover {
+        background-color: #5595fc;
+        color: white;
+      }
+      #bottom {
+        background-color: #bec8d8;
+      }
+      #title {
+        padding: 0px;
+      }
+      #controlOn {
+        width: 50px;
+      }
+      #controlOff {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      <h3>Word Parrot</h3>
+    </div>
+    <div>
+      <button class="inactive" id="controlOn">On</button>
+      <button class="inactive" id="controlOff">Off</button>
+    </div>
+    <div>
+      <p>Language:</p>
+      <div>
+        <button class="inactive" id="englishButton">English</button>
+      </div>
+    </div>
+    <div>
+      <p>Voice:</p>
+      <div>
+        <button class="inactive" id="americanVoice">American</button>
+        <button class="inactive" id="britishVoice">British</button>
+        <button class="inactive" id="australianVoice">Australian</button>
+        <button class="inactive" id="frenchVoice">French</button>
+        <button class="inactive" id="spanishVoice">Spanish</button>
+        <button class="inactive" id="swedishVoice">Swedish</button>
+        <button class="inactive" id="italianVoice">Italian</button>
+        <button class="inactive" id="koreanVoice">Korean</button>
+        <button class="inactive" id="japaneseVoice">Japanese</button>
+        <button class="inactive" id="chineseVoice">Chinese</button>
+      </div>
+    </div>
+    <div id="bottom" style="font-size: 0.8em;">
+      <a href="https://responsivevoice.org">ResponsiveVoice-NonCommercial</a> licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png" alt="95x15" width="95" height="15" />
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/options.js"></script>
+</html>
